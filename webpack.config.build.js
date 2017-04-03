@@ -8,12 +8,10 @@ webpackConfig.devtool = 'cheap-module-source-map';
 webpackConfig.plugins.push(
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest'],
-    }),
-);
+    }));
 
 webpackConfig.plugins.push(
-  new CleanWebpackPlugin(['dist']),
-);
+  new CleanWebpackPlugin(['dist']));
 
 webpackConfig.output = {
   path: path.join(__dirname, 'dist'),

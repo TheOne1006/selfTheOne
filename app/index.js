@@ -9,6 +9,7 @@ import 'fullpage.js/dist/jquery.fullpage.min';
 import Vivus from 'vivus/dist/vivus';
 
 import '../assets/styles/index.scss';
+import treeSvg from '../assets/svgs/tree/tree.svg';
 // ================================
 // START YOUR APP HERE
 // ================================
@@ -58,7 +59,7 @@ $(window.document).ready(() => {
     if (!vivusTree) {
       vivusTree = new Vivus('tree', {
         type: 'scenario',
-        file: '/assets/svgs/tree/tree.svg',
+        file: treeSvg,
       });
 
       // hack 加载进度

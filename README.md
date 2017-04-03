@@ -16,3 +16,6 @@ Build the current application
 ```sh
 $ npm run build
 ```
+
+
+## fix UglifyJs error

@@ -196,7 +196,10 @@
   background: #f0ad4e;
 }
 
-
+/********************************/
+.text-desc {
+  color: #e8e8e8;
+}
 
 
 /**
@@ -568,6 +571,7 @@
   -moz-transform: translate3d(175px, -300px, 0);
   -ms-transform: translate3d(175px, -300px, 0);
   transform: translate3d(175px, -300px, 0);
+  transition-delay: 0.2;
 }
 
 .welcome-animate-bottom {
@@ -575,6 +579,7 @@
   -moz-transform: translate3d(-175px, 300px, 0);
   -ms-transform: translate3d(-175px, 300px, 0);
   transform: translate3d(-175px, 300px, 0);
+  transition-delay: 0.25;
 }
 
 

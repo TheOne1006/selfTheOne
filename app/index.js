@@ -64,7 +64,7 @@ $(window.document).ready(() => {
       // hack 加载进度
       setTimeout(() => {
         vivusTree.reset().play();
-      }, 2000);
+      }, 1000);
     } else {
       vivusTree.reset().play();
     }
@@ -74,7 +74,7 @@ $(window.document).ready(() => {
   $('#fullpage').fullpage({
     // 在复杂情况下还是会失效
     // sectionsColor: ['#563d7c', '#5bc0de', '#5cb85c', '#f0ad4e', '#d9534f'],
-    anchors: ['all', 'page2', 'page3', 'page4'],
+    anchors: ['all', 'page2', 'page3', 'page4', 'page5'],
     // 移动设备启用css3
     css3: isMobile,
     controlArrows: !isMobile,
@@ -103,7 +103,7 @@ $(window.document).ready(() => {
             svgImgs.sectionInfo.removeClass('flashAndtada');
           }
           break;
-        case 3:
+        case 4:
           svgImgs.welcomeBottom.removeClass('welcome-animate-bottom');
           svgImgs.welcomeTop.removeClass('welcome-animate-top');
           break;
@@ -124,13 +124,13 @@ $(window.document).ready(() => {
             svgImgs.sectionInfo.addClass('flashAndtada');
           }
           break;
-        case 3:
+        case 4:
           setTimeout(() => {
             svgImgs.welcomeBottom.addClass('welcome-animate-bottom');
             svgImgs.welcomeTop.addClass('welcome-animate-top');
           }, 800);
           break;
-        case 4:
+        case 5:
           $('#tree').show();
           treePlay();
           break;

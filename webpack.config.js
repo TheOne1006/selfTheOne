@@ -86,7 +86,7 @@ module.exports = {
       // EJS
       {
         test: /\.ejs$/,
-        loader: 'ejs-loader',
+        loader: 'ejs-compiled-loader?htmlmin',
       },
 
       // IMAGES

@@ -1,5 +1,8 @@
-self.theone.io
+www.theone.io
 ===========
+
+地址: <https://theone1006.github.io/selfTheOne/>
+
 
 # 20191125
 

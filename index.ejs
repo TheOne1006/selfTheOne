@@ -5,10 +5,16 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="author" content="theone" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title> <%= htmlWebpackPlugin.options.title %> </title>
     <meta name="description" content="个人简介,吴斌杰,js工程师" />
-    <meta name="keyword" content="个人简介,吴斌杰,js工程师,nodejs" />
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="keyword" content="个人简介,吴斌杰,js工程师,nodejs,全栈工程师" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
+
+    <script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/vivus/0.4.5/vivus.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
 </head>
 <body>
   <div id='staticLogo' class='static'>
@@ -96,7 +102,7 @@
     <div class="section bg-purple" id='sectionAll'>
       <div class="container firstPage">
         <h1>
-         没有最好的语言,只有最好的 coder
+         技术栈
         </h1>
         <p class='text-right'>
           —— 吴斌杰个人简介
@@ -298,20 +304,10 @@
 
 <pre class="prettyprint linenums lang-js">
 const contactInformation = {
-  phone: 1381〇55陆55⑨,
+  phone: 13810556559,
   qq: '297190869',
   email:"wubinjie12345@gmail.com"
 };
-function callMe () {
-  try {
-    connectByPhone(contactInformation.phone);
-    connectByQQ(contactInformation.qq);
-    connectByEmail(contactInformation.email);
-  } throw (err) {
-    // no~ try again and again
-    callMe();
-  }
-}
 </pre>
             </div>
             <div class="col-xs-12 center-block">

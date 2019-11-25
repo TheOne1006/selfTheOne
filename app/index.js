@@ -3,13 +3,11 @@
  */
 
 // Load application styles
-import 'fullpage.js/dist/jquery.fullpage.min.css';
 import 'google-code-prettify/bin/prettify.min';
-import 'fullpage.js/dist/jquery.fullpage.min';
-import Vivus from 'vivus/dist/vivus';
 
 import '../assets/styles/index.scss';
 import treeSvg from '../assets/svgs/tree/tree.svg';
+
 // ================================
 // START YOUR APP HERE
 // ================================
@@ -28,6 +26,7 @@ $(window.document).ready(() => {
 
   // 是否为移动设备
   const isMobile = window.navigator.userAgent.match(/mobile/i);
+
   // 缓存图片数据
   const svgImgs = {
     sectionAll: $('#sectionAll .svgimg'),
@@ -74,7 +73,7 @@ $(window.document).ready(() => {
   // fullpage
   $('#fullpage').fullpage({
     // 在复杂情况下还是会失效
-    // sectionsColor: ['#563d7c' ,'#5bc0de','#5cb85c','#f0ad4e','#d9534f'],
+    // sectionsColor: ['#563d7c', '#5bc0de', '#5cb85c', '#f0ad4e', '#d9534f'],
     anchors: ['all', 'page2', 'page3', 'page4'],
     // 移动设备启用css3
     css3: isMobile,
@@ -111,7 +110,6 @@ $(window.document).ready(() => {
         default:
           // treePlay('rewind');
           break;
-
       }
 
       switch (nextIndex) {

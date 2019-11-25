@@ -8,6 +8,7 @@
     },
     "globals": {
       "$"      : false,
+      "Vivus"  : false,
       "window" : false
     }
 }

@@ -11,7 +11,7 @@ const IS_DEV = (process.env.NODE_ENV === 'dev');
 module.exports = {
   entry: {
     vendor: [
-      'jquery',
+      // 'jquery',
       'lodash',
     ],
     bundle: path.join(dirApp, 'index'),
@@ -26,15 +26,10 @@ module.exports = {
       IS_DEV,
     }),
 
-    new webpack.ProvidePlugin({
-      // jQuery
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-      'root.jQuery': 'jquery',
-      // lodash
-      '_': 'lodash',
-    }),
+    // new webpack.ProvidePlugin({
+    //   // lodash
+    //   '_': 'lodash',
+    // }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.ejs'),
       title: 'TheOne.io 个人简介',
@@ -64,7 +59,6 @@ module.exports = {
           },
         ],
       },
-
       // CSS / SASS
       {
         test: /\.scss/,
@@ -77,10 +71,13 @@ module.exports = {
             },
           },
           {
+            // 以看到在原来的基础上增加了sassOptions属性，并且把includePaths放在了该属性内
             loader: 'sass-loader',
             options: {
               sourceMap: IS_DEV,
-              includePaths: [dirAssets],
+              sassOptions: {
+                includePaths: [dirAssets],
+              },
             },
           },
         ],
